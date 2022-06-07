@@ -15,7 +15,7 @@ body {
   /* overflow-y: hidden; */
 }
 
-@media (max-width: 616px) {
+@media (max-width: 880px) {
   html {
     font-size: 10px;
   }
