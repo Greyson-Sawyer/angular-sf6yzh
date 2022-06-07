@@ -12,8 +12,9 @@
   display: grid;
   place-content: center;
   grid-auto-rows: minmax(300px, auto);
-  grid-template-columns: repeat(auto-fill, minmax(720px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
   gap: 0.5rem;
+  /* max-width: 1920px; */
 }
 
 .video-container {
@@ -71,9 +72,14 @@ video {
   background-size: 100% auto;
 }
 
-@media only screen and (max-width: 1096px) {
+@media only screen and (max-width: 1800px) {
   .video-container {
     grid-row: 1/2;
+  }
+  .page {
+    grid-auto-rows: minmax(18vw, auto);
+    grid-template-columns: repeat(auto-fill, minmax(680px, auto));
+    gap: 0.5rem;
   }
 }
 
