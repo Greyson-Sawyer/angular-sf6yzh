@@ -12,5 +12,17 @@
     </div>
   </div>
 
-  <div *ngFor="let image of page.images" class="image" parallax></div>
+  <div
+    *ngFor="let image of page.images"
+    class="image"
+    parallax
+    [style.background]="'url(' + image + ') no-repeat center'"
+  ></div>
 </div>
+
+<!-- <div
+*ngFor="let image of page.images"
+class="image"
+parallax
+[ngStyle]="{background: 'url(' + 'https://picsum.photos/1920/1080' + ') no-repeat center'}"
+></div> -->
