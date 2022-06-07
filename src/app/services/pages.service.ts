@@ -28,8 +28,6 @@ export class PagesService {
         'https://picsum.photos/1920/1080',
         'https://picsum.photos/1920/1080',
         'https://picsum.photos/1920/1080',
-        'https://picsum.photos/1920/1080',
-        
       ],
     },
     {
@@ -48,8 +46,6 @@ export class PagesService {
         'https://picsum.photos/1920/1080',
         'https://picsum.photos/1920/1080',
         'https://picsum.photos/1920/1080',
-        'https://picsum.photos/1920/1080',
-  
       ],
     },
   ];
