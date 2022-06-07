@@ -96,7 +96,6 @@ video {
     width: 100%;
     height: 30vw;
     margin-top: 0.5rem;
-    transition: 50ms;
   }
 
   .title-container {
