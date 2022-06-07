@@ -1,23 +1,2 @@
 <app-header></app-header>
-<div class="page">
-  <div class="video-container">
-    <video #heroVideo autoplay muted playsinline loop width="100%">
-      <source
-        src="https://firebasestorage.googleapis.com/v0/b/greyson-color.appspot.com/o/emma%2Femma_v23.mp4?alt=media&token=43c35544-67ec-4537-bb50-4cadabc3cfba"
-        type="video/mp4"
-      />
-    </video>
-    <div class="title-container">
-      <h2 class="video-title">Emma</h2>
-      <p class="shot-by">SHOT BY</p>
-      <a
-        href="https://www.instagram.com/andrewgsalama/"
-        target="_blank"
-        class="creator-link"
-        >@AndrewGSalama</a
-      >
-    </div>
-  </div>
-
-  <div *ngFor="let image of images" class="image" parallax></div>
-</div>
+<page *ngFor="let page of pages" [page]="page"></page>

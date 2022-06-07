@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  ElementRef,
+  ViewChild,
+  AfterViewInit,
+  AfterContentInit,
+} from '@angular/core';
+import { Page } from '../../services/pages.service';
 
 @Component({
-  selector: 'app-page',
+  selector: 'page',
   templateUrl: './page.component.html',
-  styleUrls: ['./page.component.css']
+  styleUrls: ['./page.component.css'],
 })
-export class PageComponent implements OnInit {
+export class PageComponent implements AfterViewInit {
+  @Input('page') page: Page;
+  @ViewChild('heroVideo') heroVideo: ElementRef<HTMLVideoElement>;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.heroVideo.nativeElement.muted = true;
   }
-
 }
