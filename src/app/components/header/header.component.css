@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 880px) {
-  html {
-    font-size: 10px;
+  #greyson-sawyer-text {
+    font-size: 1.3rem;
   }
 }
